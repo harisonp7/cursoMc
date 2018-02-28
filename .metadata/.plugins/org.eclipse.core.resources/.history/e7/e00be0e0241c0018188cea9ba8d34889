@@ -1,0 +1,5 @@
+package com.hp.cursomc.domain;
+
+public class Produto {
+
+}
