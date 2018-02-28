@@ -1,0 +1,5 @@
+package com.hp.cursomc.repositories;
+
+public class CategoriaRepository {
+
+}

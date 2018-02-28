@@ -5,7 +5,291 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-02-27T09:00:00Z</updated>
+  <updated>2018-02-27T20:14:34Z</updated>
+  <entry>
+    <title>Spring Cloud Finchley.M7 Has Been Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/02/27/spring-cloud-finchley-m7-has-been-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Ryan Baxter</name>
+    </author>
+    <id>tag:spring.io,2018-02-27:3188</id>
+    <updated>2018-02-27T20:14:34Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the community, I am pleased to announce that the Milestone 7 (M7) of the &lt;a href="https://cloud.spring.io"&gt;Spring Cloud Finchley&lt;/a&gt; Release Train is available today. The release can be found in &lt;a href="https://repo.spring.io/milestone/"&gt;Spring Milestone&lt;/a&gt; repository. This release is compatible with Spring Boot 2.0.0.RC2. You can check out the Finchley &lt;a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Finchley-Release-Notes"&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#notable-changes-in-the-finchley-release-train" class="anchor" name="notable-changes-in-the-finchley-release-train"&gt;&lt;/a&gt;Notable Changes in the Finchley Release Train&lt;/h2&gt;&lt;h3&gt;&lt;a href="#spring-cloud-netflix" class="anchor" name="spring-cloud-netflix"&gt;&lt;/a&gt;Spring Cloud Netflix&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;All of the code releated to Feign has been moved to a separate project, &lt;a href="https://github.com/spring-cloud/spring-cloud-openfeign"&gt;Spring Cloud OpenFeign&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;There is a known issue with the Hystrix Webflux endpoint when using Spring Boot 2.0.0.RC2. You can follow this &lt;a href="https://github.com/reactor/reactor-core/issues/1091"&gt;issue&lt;/a&gt; in Reactor for more information.&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-cloud-openfeign" class="anchor" name="spring-cloud-openfeign"&gt;&lt;/a&gt;Spring Cloud Openfeign&lt;/h3&gt;
+&lt;p&gt;New &lt;a href="https://github.com/spring-cloud/spring-cloud-openfeign"&gt;project&lt;/a&gt; containing all the Feign code that used to be in Spring Cloud Netflix.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-gateway" class="anchor" name="spring-cloud-gateway"&gt;&lt;/a&gt;Spring Cloud Gateway&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-gateway/issues/94"&gt;Support for retrying requests&lt;/a&gt; using &lt;code&gt;RetryGatewayFilterFactory&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Bug fixes for &lt;a href="https://github.com/spring-cloud/spring-cloud-gateway/issues/200"&gt;STOMP&lt;/a&gt; and &lt;a href="https://github.com/spring-cloud/spring-cloud-gateway/issues/161"&gt;Server Sent Events&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following modules were updated as part of Finchley.M7:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Module &lt;/th&gt;
+      &lt;th&gt;Version &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Gateway &lt;/td&gt;
+      &lt;td&gt;2.0.0.M7 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Sleuth &lt;/td&gt;
+      &lt;td&gt;2.0.0.M7 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Zookeeper &lt;/td&gt;
+      &lt;td&gt;2.0.0.M6 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Build &lt;/td&gt;
+      &lt;td&gt;2.0.0.RC1 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Consul &lt;/td&gt;
+      &lt;td&gt;2.0.0.M6 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Netflix &lt;/td&gt;
+      &lt;td&gt;2.0.0.M7 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Aws &lt;/td&gt;
+      &lt;td&gt;2.0.0.M4 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Contract &lt;/td&gt;
+      &lt;td&gt;2.0.0.M7 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Cloudfoundry &lt;/td&gt;
+      &lt;td&gt;2.0.0.M3 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Security &lt;/td&gt;
+      &lt;td&gt;2.0.0.M2 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Dependencies &lt;/td&gt;
+      &lt;td&gt;2.0.0.RC1 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Commons &lt;/td&gt;
+      &lt;td&gt;2.0.0.M7 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Config &lt;/td&gt;
+      &lt;td&gt;2.0.0.M7 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Task &lt;/td&gt;
+      &lt;td&gt;2.0.0.M3 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Bus &lt;/td&gt;
+      &lt;td&gt;2.0.0.M6 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Openfeign &lt;/td&gt;
+      &lt;td&gt;2.0.0.M1 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Stream &lt;/td&gt;
+      &lt;td&gt;Elmhurst.RC1 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Boot &lt;/td&gt;
+      &lt;td&gt;2.0.0.RC2 &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Vault &lt;/td&gt;
+      &lt;td&gt;2.0.0.M6 &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As always, we welcome feedback on &lt;a href="https://github.com/spring-cloud/"&gt;GitHub&lt;/a&gt;, on &lt;a href="https://gitter.im/spring-cloud/spring-cloud"&gt;Gitter&lt;/a&gt;, on &lt;a href="http://stackoverflow.com/questions/tagged/spring-cloud"&gt;Stack Overflow&lt;/a&gt;, or on &lt;a href="https://twitter.com/SpringCloud"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To get started with Maven with a BOM (dependency management only):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;&amp;lt;repositories&amp;gt;&#xD;
+    &amp;lt;repository&amp;gt;&#xD;
+        &amp;lt;id&amp;gt;spring-milestones&amp;lt;/id&amp;gt;&#xD;
+        &amp;lt;name&amp;gt;Spring Milestones&amp;lt;/name&amp;gt;&#xD;
+        &amp;lt;url&amp;gt;http://repo.spring.io/milestone&amp;lt;/url&amp;gt;&#xD;
+        &amp;lt;snapshots&amp;gt;&#xD;
+            &amp;lt;enabled&amp;gt;false&amp;lt;/enabled&amp;gt;&#xD;
+        &amp;lt;/snapshots&amp;gt;&#xD;
+    &amp;lt;/repository&amp;gt;&#xD;
+&amp;lt;/repositories&amp;gt;&#xD;
+&amp;lt;dependencyManagement&amp;gt;&#xD;
+    &amp;lt;dependencies&amp;gt;&#xD;
+        &amp;lt;dependency&amp;gt;&#xD;
+            &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+            &amp;lt;artifactId&amp;gt;spring-cloud-dependencies&amp;lt;/artifactId&amp;gt;&#xD;
+            &amp;lt;version&amp;gt;Finchley.M7&amp;lt;/version&amp;gt;&#xD;
+            &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+            &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+        &amp;lt;/dependency&amp;gt;&#xD;
+    &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;&#xD;
+&amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-cloud-starter-netflix-eureka-client&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+    ...&#xD;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or with Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;buildscript {&#xD;
+    dependencies {&#xD;
+        classpath &amp;quot;io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE&amp;quot;&#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+repositories {&#xD;
+    maven {&#xD;
+        url &amp;#39;http://repo.spring.io/milestone&amp;#39;&#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+apply plugin: &amp;quot;io.spring.dependency-management&amp;quot;&#xD;
+&#xD;
+dependencyManagement {&#xD;
+    imports {&#xD;
+        mavenBom &amp;#39;org.springframework.cloud:spring-cloud-dependencies:Finchley.M7&amp;#39;&#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+dependencies {&#xD;
+    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-config&amp;#39;&#xD;
+    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-netflix-eureka-client&amp;#39;&#xD;
+    ...&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Stream 2.0 - Polled Consumers</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/02/27/spring-cloud-stream-2-0-polled-consumers" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Gary Russell</name>
+    </author>
+    <id>tag:spring.io,2018-02-26:3185</id>
+    <updated>2018-02-27T17:31:03Z</updated>
+    <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;This is the second blog in a series of pre-release blogs in preparation for Spring Cloud Stream 2.0.0.RELEASE.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h3&gt;&lt;a href="#preface" class="anchor" name="preface"&gt;&lt;/a&gt;Preface&lt;/h3&gt;
+&lt;p&gt;Spring Cloud Stream 2.0 introduces polled consumers, where the application can control message processing rates.&lt;/p&gt;&lt;h4&gt;&lt;a href="#introduction" class="anchor" name="introduction"&gt;&lt;/a&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;Spring Cloud Stream has the concepts of producers and consumers; when using the messaging paradigm, &lt;code&gt;MessageChannel&lt;/code&gt;s are bound to destinations (e.g. Kafka topics, Rabbit Exchanges/Queues). To-date, on the consumer side, messages are delivered whenever an idle consumer is available. In effect, the broker controls the rate of delivery; usually, the next message is delivered immediately after the current one is processed. &lt;/p&gt;
+&lt;p&gt;2.0 introduces polled consumers, where the application can control the rate of message consumption.&lt;br/&gt;Polled consumers are supported by the Kafka and RabbitMQ binders.&lt;/p&gt;&lt;h4&gt;&lt;a href="#details" class="anchor" name="details"&gt;&lt;/a&gt;Details&lt;/h4&gt;
+&lt;p&gt;With polled consumers, instead of binding a &lt;code&gt;MessageChannel&lt;/code&gt; to the destination, we bind a &lt;code&gt;PollableMessageSource&lt;/code&gt;; for example, a &lt;code&gt;PolledProcessor&lt;/code&gt; binding might be configured like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;public interface PolledProcessor {&#xD;
+&#xD;
+    @Input&#xD;
+    PollableMessageSource destIn();&#xD;
+&#xD;
+    @Output&#xD;
+    MessageChannel destOut();&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The message source has a method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;boolean poll(MessageHandler handler);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The message is not acknowledged until the handler&amp;rsquo;s &lt;code&gt;handleRequest&lt;/code&gt; method exits.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;MessageHandler&lt;/code&gt; is the interface from spring-messaging; you can provide one of the standard Spring Integration message handlers, or your own implementation (often a lambda). Because the &lt;code&gt;handleMessage&lt;/code&gt; method takes a &lt;code&gt;Message&amp;lt;?&amp;gt;&lt;/code&gt; argument, there is no type information and the payload will not be converted.&lt;/p&gt;
+&lt;p&gt;However, message conversion &lt;a href="https://spring.io/blog/2018/02/26/spring-cloud-stream-2-0-content-type-negotiation-and-transformation"&gt;as discussed in the first blog in this series&lt;/a&gt; can be applied to polled consumers as well. In order to communicate the type information to the conversion service, we provide a parameterized type reference in the overloaded &lt;code&gt;poll()&lt;/code&gt; method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;boolean poll(MessageHandler handler, ParameterizedTypeReference&amp;lt;?&amp;gt; type)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the message payload will be converted to the type, which can be simple, for example with a content type of &lt;code&gt;text/plain&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;new ParameterizedTypeReference&amp;lt;String&amp;gt;() {}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;or more complex with, for example a JSON content type:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;new ParameterizedTypeReference&amp;lt;Map&amp;lt;String, Foo&amp;gt;&amp;gt;() {}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;&lt;a href="#putting-it-all-together" class="anchor" name="putting-it-all-together"&gt;&lt;/a&gt;Putting it all Together&lt;/h4&gt;
+&lt;p&gt;The following simple Spring Boot application provides a complete example; it receives String payloads, converts them to upper case and forwards the result to another destination.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@SpringBootApplication&#xD;
+@EnableBinding(Blog2Application.PolledProcessor.class)&#xD;
+public class Blog2Application {&#xD;
+&#xD;
+  private final Logger logger =&#xD;
+  	  LoggerFactory.getLogger(Blog2Application.class);&#xD;
+&#xD;
+  public static void main(String[] args) {&#xD;
+    SpringApplication.run(Blog2Application.class, args);&#xD;
+  }&#xD;
+&#xD;
+  @Bean&#xD;
+  public ApplicationRunner runner(PollableMessageSource source,&#xD;
+  	    MessageChannel dest) {&#xD;
+    return args -&amp;gt; {&#xD;
+      while (true) {&#xD;
+        boolean result = source.poll(m -&amp;gt; {&#xD;
+          String payload = (String) m.getPayload();&#xD;
+          logger.info(&amp;quot;Received: &amp;quot; + payload);&#xD;
+          dest.send(MessageBuilder.withPayload(payload.toUpperCase())&#xD;
+              .copyHeaders(m.getHeaders())&#xD;
+              .build());&#xD;
+        }, new ParameterizedTypeReference&amp;lt;String&amp;gt;() { });&#xD;
+        if (result) {&#xD;
+          logger.info(&amp;quot;Processed a message&amp;quot;);&#xD;
+        }&#xD;
+        else {&#xD;
+          logger.info(&amp;quot;Nothing to do&amp;quot;);&#xD;
+        }&#xD;
+        Thread.sleep(5_000);&#xD;
+      }&#xD;
+    };&#xD;
+  }&#xD;
+&#xD;
+  public static interface PolledProcessor {&#xD;
+&#xD;
+    @Input&#xD;
+    PollableMessageSource source();&#xD;
+&#xD;
+    @Output&#xD;
+    MessageChannel dest();&#xD;
+&#xD;
+  }&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#conclusion" class="anchor" name="conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Applications can now control the rate at which messages are consumed.&lt;/p&gt;
+&lt;p&gt;For more information, see &lt;a href="https://docs.spring.io/spring-cloud-stream/docs/Elmhurst.BUILD-SNAPSHOT/reference/htmlsingle/index.html#_using_polled_consumers"&gt;Using Polled Consumers&lt;/a&gt; in the reference manual.&lt;/p&gt;
+&lt;p&gt;We encourage you to provide feedback using one of the following facilities:&lt;br/&gt;- &lt;a href="https://github.com/spring-cloud/spring-cloud-stream/issues"&gt;Project&amp;rsquo;s GitHub Issues &lt;/a&gt;&lt;br/&gt;- &lt;a href="https://stackoverflow.com/tags/spring-cloud-stream"&gt;Stack Overflow channel&lt;/a&gt;&lt;br/&gt;- &lt;a href="https://gitter.im/spring-cloud/spring-cloud-stream"&gt;Gitter channel&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security OAuth 2.3.0.RC1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/02/27/spring-security-oauth-2-3-0-rc1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Joe Grandja</name>
+    </author>
+    <id>tag:spring.io,2018-02-27:3186</id>
+    <updated>2018-02-27T16:03:08Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the community, I&amp;#8217;m pleased to announce the release of Spring Security OAuth 2.3.0.RC1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://github.com/spring-projects/spring-security-oauth/milestone/30?closed=1"&gt;2.3.0.RC1 release&lt;/a&gt; adds new support for Elliptic Curve signature verification in &lt;code&gt;JwkTokenStore&lt;/code&gt;. This release also includes a few minor enhancements and bug fixes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security-oauth/"&gt;Project Page&lt;/a&gt; |
+&lt;a href="https://github.com/spring-projects/spring-security-oauth/"&gt;GitHub&lt;/a&gt; |
+&lt;a href="http://projects.spring.io/spring-security-oauth/docs/Home.html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security-oauth2"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Data Flow 1.4.0 M1 released</title>
     <link rel="alternate" href="https://spring.io/blog/2018/02/27/spring-cloud-data-flow-1-4-0-m1-released" />
@@ -1397,283 +1681,5 @@ dependencies {&#xD;
 &lt;p&gt;This release provides an upgrade path to Spring Framework 5 along with Java 8, Servlet 3.1, Hibernate 5, Tiles 3, and JSF 2.2 as minimum requirements.&lt;/p&gt;
 &lt;p&gt;In this release &amp;ldquo;spring-js&amp;rdquo; has been merged with &amp;ldquo;spring-webflow&amp;rdquo; so there is no longer a separate &amp;ldquo;spring-js&amp;rdquo; module. As a result some configuration classes have changed packages. The &amp;ldquo;spring-js-resources&amp;rdquo; module is still available but as an optional module that must be included explicitly if needed.&lt;/p&gt;
 &lt;p&gt;Please give the release candidate a try and report any issues. The final release is currently scheduled for early March.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Session 1.3.2 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/02/12/spring-session-1-3-2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2018-02-12:3165</id>
-    <updated>2018-02-12T15:58:30Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;em&gt;This post was authored by &lt;a href="https://github.com/vpavic"&gt;Vedran Pavić&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the community I&amp;#8217;m pleased to announce the release of &lt;a href="https://docs.spring.io/spring-session/docs/1.3.2.RELEASE/reference/html5/"&gt;Spring Session 1.3.2.RELEASE&lt;/a&gt;. This maintenance release contains numerous bug fixes and improvements.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Some of the highlights include:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session/issues/951"&gt;#951&lt;/a&gt; - &lt;code&gt;SessionRepositoryFilter#changeSessionId&lt;/code&gt; does not copy the previous &lt;code&gt;maxInactiveInterval&lt;/code&gt; into the new session&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session/issues/983"&gt;#983&lt;/a&gt; - Optimize &lt;code&gt;HazelcastSessionRepository&lt;/code&gt; write operations&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session/issues/984"&gt;#984&lt;/a&gt; - Improve session event handling&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can find the complete details of the release in the &lt;a href="https://github.com/spring-projects/spring-session/milestone/33?closed=1"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id="feedback-please" class="sect0"&gt;&lt;a class="anchor" href="#feedback-please"&gt;&lt;/a&gt;Feedback Please&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;If you have feedback on this release, I encourage you to reach out via &lt;a href="https://stackoverflow.com/questions/tagged/spring-session"&gt;StackOverflow&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-session/issues"&gt;GitHub Issues&lt;/a&gt;, or via the comments section. You can also ping Rob &lt;a href="https://twitter.com/rob_winch"&gt;@rob_winch&lt;/a&gt;, Joe &lt;a href="https://twitter.com/joe_grandja"&gt;@joe_grandja&lt;/a&gt;, or me &lt;a href="https://twitter.com/vedran_pavic"&gt;@vedran_pavic&lt;/a&gt; on Twitter.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Of course the best feedback comes in the form of &lt;a href="https://github.com/spring-projects/spring-session/blob/1.3.2.RELEASE/CONTRIBUTING.adoc"&gt;contributions&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-session/"&gt;Project Site&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-session/docs/1.3.2.RELEASE/reference/html5/"&gt;Reference&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Edgware.SR2 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/02/09/spring-cloud-edgware-sr2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Ryan Baxter</name>
-    </author>
-    <id>tag:spring.io,2018-02-09:3164</id>
-    <updated>2018-02-09T21:51:03Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the community, I am pleased to announce that the Service Release 2 (SR2) of the &lt;a href="https://cloud.spring.io"&gt;Spring Cloud Edgware&lt;/a&gt; Release Train is available today. The release can be found in &lt;a href="http://repo1.maven.org/maven2/org/springframework/cloud/spring-cloud-dependencies/Edgware.SR2/"&gt;Maven Central&lt;/a&gt;. You can check out the Edgware &lt;a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes"&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#notable-changes-in-the-edgware-release-train" class="anchor" name="notable-changes-in-the-edgware-release-train"&gt;&lt;/a&gt;Notable Changes in the Edgware Release Train&lt;/h2&gt;&lt;h3&gt;&lt;a href="#spring-cloud-commons" class="anchor" name="spring-cloud-commons"&gt;&lt;/a&gt;Spring Cloud Commons&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-commons/milestone/41?closed=1"&gt;Issues&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-contract" class="anchor" name="spring-cloud-contract"&gt;&lt;/a&gt;Spring Cloud Contract&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-contract/milestone/29?closed=1"&gt;Issues&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-config" class="anchor" name="spring-cloud-config"&gt;&lt;/a&gt;Spring Cloud Config&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-config/milestone/43?closed=1"&gt;Issues&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-consul" class="anchor" name="spring-cloud-consul"&gt;&lt;/a&gt;Spring Cloud Consul&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-config/milestone/43?closed=1"&gt;Issues&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-netflix" class="anchor" name="spring-cloud-netflix"&gt;&lt;/a&gt;Spring Cloud Netflix&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-config/milestone/43?closed=1"&gt;Issues&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-bus" class="anchor" name="spring-cloud-bus"&gt;&lt;/a&gt;Spring Cloud Bus&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-bus/milestone/26?closed=1"&gt;Issues&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-sleuth" class="anchor" name="spring-cloud-sleuth"&gt;&lt;/a&gt;Spring Cloud Sleuth&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/milestone/41?closed=1"&gt;Issues&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The following modules were updated as part of Edgware.SR2:&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Module &lt;/th&gt;
-      &lt;th&gt;Version &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Spring Cloud Commons &lt;/td&gt;
-      &lt;td&gt;1.3.2.RELEASE &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Spring Cloud Contract &lt;/td&gt;
-      &lt;td&gt;1.2.3.RELEASE &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Spring Cloud Config &lt;/td&gt;
-      &lt;td&gt;1.4.2.RELEASE &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Spring Cloud Build &lt;/td&gt;
-      &lt;td&gt;1.3.8.RELEASE &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Spring Boot &lt;/td&gt;
-      &lt;td&gt;1.5.10.RELEASE &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Spring Cloud Consul &lt;/td&gt;
-      &lt;td&gt;1.3.2.RELEASE &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Spring Cloud Netflix &lt;/td&gt;
-      &lt;td&gt;1.4.3.RELEASE &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Spring Cloud Bus &lt;/td&gt;
-      &lt;td&gt;1.3.3.RELEASE &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Spring Cloud Sleuth &lt;/td&gt;
-      &lt;td&gt;1.3.2.RELEASE &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;As always, we welcome feedback on &lt;a href="https://github.com/spring-cloud/"&gt;GitHub&lt;/a&gt;, on &lt;a href="https://gitter.im/spring-cloud/spring-cloud"&gt;Gitter&lt;/a&gt;, on &lt;a href="http://stackoverflow.com/questions/tagged/spring-cloud"&gt;Stack Overflow&lt;/a&gt;, or on &lt;a href="https://twitter.com/SpringCloud"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To get started with Maven with a BOM (dependency management only):&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;&lt;br/&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
-    &amp;lt;dependencies&amp;gt;&#xD;
-        &amp;lt;dependency&amp;gt;&#xD;
-            &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-            &amp;lt;artifactId&amp;gt;spring-cloud-dependencies&amp;lt;/artifactId&amp;gt;&#xD;
-            &amp;lt;version&amp;gt;Edgware.SR2&amp;lt;/version&amp;gt;&#xD;
-            &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
-            &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
-        &amp;lt;/dependency&amp;gt;&#xD;
-    &amp;lt;/dependencies&amp;gt;&#xD;
-&amp;lt;/dependencyManagement&amp;gt;&#xD;
-&amp;lt;dependencies&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-        &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-        &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-        &amp;lt;artifactId&amp;gt;spring-cloud-starter-netflix-eureka-client&amp;lt;/artifactId&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-    ...&#xD;
-&amp;lt;/dependencies&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;or with Gradle:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;buildscript {&#xD;
-    dependencies {&#xD;
-        classpath &amp;quot;io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE&amp;quot;&#xD;
-    }&#xD;
-}&#xD;
-&#xD;
-&#xD;
-&#xD;
-apply plugin: &amp;quot;io.spring.dependency-management&amp;quot;&#xD;
-&#xD;
-dependencyManagement {&#xD;
-    imports {&#xD;
-        mavenBom &amp;#39;org.springframework.cloud:spring-cloud-dependencies:Edgware.SR2&amp;#39;&#xD;
-    }&#xD;
-}&#xD;
-&#xD;
-dependencies {&#xD;
-    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-config&amp;#39;&#xD;
-    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-netflix-eureka-client&amp;#39;&#xD;
-    ...&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud for Google Cloud Platform 1.0 Milestone 2 Available</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/02/07/spring-cloud-for-google-cloud-platform-1-0-milestone-2-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Artem Bilan</name>
-    </author>
-    <id>tag:spring.io,2018-02-07:3162</id>
-    <updated>2018-02-07T19:24:11Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;Dear Spring Community!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;It&amp;#8217;s my pleasure to announce today a new project in the &lt;a href="https://projects.spring.io/spring-cloud/"&gt;Spring Cloud&lt;/a&gt; family.
-It’s called &lt;code&gt;Spring Cloud GCP&lt;/code&gt; and its goal is to bring into your applications well-known Spring patterns and Spring Boot conventions for consuming &lt;a href="https://cloud.google.com"&gt;Google Cloud Platform&lt;/a&gt; services.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The project currently is in version &lt;code&gt;1.0.0.M2&lt;/code&gt; and is available from the &lt;a href="https://repo.spring.io/milestone/org/springframework/cloud"&gt;Spring Milestone Repository&lt;/a&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependencyManagement&amp;gt;
-   &amp;lt;dependencies&amp;gt;
-       &amp;lt;dependency&amp;gt;
-           &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
-           &amp;lt;artifactId&amp;gt;spring-cloud-gcp-dependencies&amp;lt;/artifactId&amp;gt;
-           &amp;lt;version&amp;gt;1.0.0.M2&amp;lt;/version&amp;gt;
-           &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;
-           &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;
-       &amp;lt;/dependency&amp;gt;
-   &amp;lt;/dependencies&amp;gt;
-&amp;lt;/dependencyManagement&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This project has been started as an experiment of collaboration between Google and Spring teams.
-So far we got a good experience and our inter-team knowledge sharing has brought for us this project with several stable modules and active contribution from the Google team.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The project provides an integration and access object to Google Cloud Platform services via these modules:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="spring-cloud-gcp-core"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-core"&gt;&lt;/a&gt;spring-cloud-gcp-core&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The first class citizen abstraction like &lt;code&gt;GcpProjectIdProvider&lt;/code&gt; and &lt;code&gt;CredentialsProvider&lt;/code&gt; and their support classes.
-Provides properties and configures access to the &lt;a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects"&gt;Project ID&lt;/a&gt; and &lt;a href="https://cloud.google.com/docs/authentication"&gt;Cloud Authentication&lt;/a&gt;.
-This is a transitive dependency for all other modules.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="spring-cloud-gcp-autoconfigure-and-spring-cloud-gcp-starters"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-autoconfigure-and-spring-cloud-gcp-starters"&gt;&lt;/a&gt;spring-cloud-gcp-autoconfigure and spring-cloud-gcp-starters&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The Spring Boot auto-configurations and starters for components provided by this project, or just wrappers and helpers to existing auto-configuration such as &lt;code&gt;DataSourceAutoConfiguration&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="spring-cloud-gcp-pubsub"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-pubsub"&gt;&lt;/a&gt;spring-cloud-gcp-pubsub&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The well-known &lt;code&gt;Template&lt;/code&gt; and &lt;code&gt;Factory&lt;/code&gt; Spring patterns implementations for &lt;a href="https://cloud.google.com/pubsub"&gt;Google Cloud Pub/Sub&lt;/a&gt; service.
-Also this module includes &lt;a href="https://projects.spring.io/spring-integration"&gt;Spring Integration&lt;/a&gt; Channel Adapters implementations around the &lt;code&gt;PubSubTemplate&lt;/code&gt;, &lt;code&gt;PublisherFactory&lt;/code&gt; and &lt;code&gt;SubscriberFactory&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="spring-cloud-gcp-storage"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-storage"&gt;&lt;/a&gt;spring-cloud-gcp-storage&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The &lt;code&gt;org.springframework.core.io.ProtocolResolver&lt;/code&gt; implementation for the &lt;a href="https://cloud.google.com/storage"&gt;Google Cloud Storage&lt;/a&gt; resources resolution.
-Plus &lt;a href="https://projects.spring.io/spring-integration"&gt;Spring Integration&lt;/a&gt; Channel Adapters for reading and writing to/from &lt;code&gt;Blob&lt;/code&gt; and &lt;code&gt;Bucket&lt;/code&gt; resources.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="spring-cloud-gcp-logging"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-logging"&gt;&lt;/a&gt;spring-cloud-gcp-logging&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This module provides support for associating a web request trace ID with the corresponding log entries.
-This allows grouping of log messages by request.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="spring-cloud-gcp-trace"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-trace"&gt;&lt;/a&gt;spring-cloud-gcp-trace&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The &lt;a href="https://cloud.spring.io/spring-cloud-sleuth"&gt;Spring Cloud Sleuth&lt;/a&gt; components implementation for the &lt;a href="https://cloud.google.com/trace"&gt;Google Cloud Stackdriver Trace&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="spring-cloud-gcp-pubsub-stream-binder"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-pubsub-stream-binder"&gt;&lt;/a&gt;spring-cloud-gcp-pubsub-stream-binder&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The &lt;a href="https://cloud.spring.io/spring-cloud-stream"&gt;Spring Cloud Stream&lt;/a&gt; &lt;code&gt;Binder&lt;/code&gt; implementation for the &lt;a href="https://cloud.google.com/pubsub"&gt;Google Cloud Pub/Sub&lt;/a&gt; service.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;See more information about these and other project features in the &lt;a href="https://docs.spring.io/spring-cloud-gcp/docs/1.0.0.M2/reference/htmlsingle"&gt;Reference Manual&lt;/a&gt;.
-Also pay attention to the comprehensive set of &lt;a href="https://github.com/spring-cloud/spring-cloud-gcp/tree/master/spring-cloud-gcp-samples"&gt;Samples&lt;/a&gt; provided in the project.
-In addition we have a &lt;a href="https://spring.io/guides/gs/spring-cloud-gcp"&gt;Messaging with Google Cloud Pub/Sub&lt;/a&gt; Getting Started Guide for you.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;And finally don&amp;#8217;t miss &lt;a href="https://cloudplatform.googleblog.com/2018/02/announcing-Spring-Cloud-GCP-integrating-your-favorite-Java-framework-with-Google-Cloud.html"&gt;Google Announcement&lt;/a&gt; about this project!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;More Google Cloud Platform services support and Spring components implementations are coming!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Any feedback, feature ideas, critics, bug reports and questions are welcome via appropriate communication channels.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-gcp"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-gcp/issues"&gt;issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-cloud-gcp/docs/1.0.0.M2/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>
