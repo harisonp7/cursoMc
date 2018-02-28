@@ -1,0 +1,5 @@
+package com.hp.cursomc.services.exceptions;
+
+public class ObjectNotFoundException {
+
+}

@@ -12,6 +12,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 public class Categoria implements Serializable{
 
@@ -22,7 +24,8 @@ public class Categoria implements Serializable{
 	private Integer id;
 	private String nome;
 	
-	@ManyToMany(mappedBy="categorias")
+	@JsonManagedReference //Não entrar em estato ciclico, listar os produtos e suas categorias, o lado que eu quero que venha os objs associados
+	@ManyToMany(mappedBy="categorias") //Repetindo os joins de categorias
 	private List<Produto> produtos = new ArrayList<>();
 	
 	public Categoria() {

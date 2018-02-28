@@ -1,0 +1,8 @@
+package com.hp.cursomc.resources.exceptions;
+
+public class StandarError {
+	private Integer status;
+	private String msg;
+	private Long timeStamp;
+
+}

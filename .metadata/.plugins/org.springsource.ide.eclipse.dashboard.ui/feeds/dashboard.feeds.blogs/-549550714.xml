@@ -5,7 +5,68 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-02-27T20:14:34Z</updated>
+  <updated>2018-02-28T01:36:06Z</updated>
+  <entry>
+    <title>This Week in Spring  - February 27th, 2018</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/02/28/this-week-in-spring-february-27th-2018" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-02-28:3191</id>
+    <updated>2018-02-28T01:36:06Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans and welcome to another installment of &lt;em&gt;Spring Tips&lt;/em&gt;! This is a &lt;em&gt;super&lt;/em&gt; exciting week! &lt;a href="http://twitter.com/SpringBoot"&gt;Spring Boot 2.0&lt;/a&gt; is coming! Keep your eyes &lt;a href="http://start.spring.io"&gt;on the Spring Initializr&lt;/a&gt; or you&amp;rsquo;ll miss it! :D&lt;/p&gt;
+&lt;p&gt;Today I was at the Okta Iterate conference talking to developers who are using Spring and Okta, thanks to &lt;a href="https://twitter.com/mraible"&gt;my buddy Matt Raible&lt;/a&gt;. High point? I got to meet &lt;a href="http://twitter.com/CodingHorror"&gt;Jeff Atwood&lt;/a&gt;, the co-creator of Stack Overflow!&lt;/p&gt;
+&lt;img src = "https://pbs.twimg.com/media/DXEoZzJV4AAo8sk.jpg:large" width = "500" /&gt;
+&lt;p&gt;Tomorrow, I begin a whirlwind tour over the next two weeks. First, it&amp;rsquo;s off to Glasgow, Scotland; then Sydney, Australia; then Dubai; then Bangalore, India (&lt;a href="https://2018.agileindia.org/"&gt;for Agile India 2018&lt;/a&gt;); and then it&amp;rsquo;s off to Boston, Massachusetts &lt;a href="https://springonetour.io/2018/boston"&gt;for the SpringOne Tour event on March 13th&lt;/a&gt;. If you&amp;rsquo;re in any of those places, &lt;a href="http://twitter.com/Starbuxman"&gt;don&amp;rsquo;t hesitate to reach out&lt;/a&gt;! I&amp;rsquo;m elated to see and hear from you!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I love this &lt;a href="https://content.pivotal.io/blog/building-functions-with-riff"&gt;blog introducing Project Riff&lt;/a&gt; - the function-as-a-service from Pivotal.&lt;/li&gt;
+  &lt;li&gt;Spring Security ninja &lt;a href="https://spring.io/blog/2018/02/27/spring-security-oauth-2-3-0-rc1-released"&gt;Joe Grandja has just announced Spring Security 2.3.0.RC1&lt;/a&gt; which adds new support for Elliptic Curve signature verification in &lt;code&gt;JwkTokenStore&lt;/code&gt;. This release also includes a few minor enhancements and bug fixes.&lt;/li&gt;
+  &lt;li&gt;Want to learn more &lt;a href="https://github.com/spring-cloud/spring-cloud-contract/issues/434"&gt;about using Spring Cloud Contract with Kotlin&lt;/a&gt;, check out the issue that started it all. Presently, Spring Cloud Kotlin definitions are authored in Groovy. This new DSL grows the audience. This is a nice addition to the recent support for Spring Cloud Contract and &lt;code&gt;.yml&lt;/code&gt; properties.&lt;/li&gt;
+  &lt;li&gt;Spring Integration ninja &lt;a href="https://spring.io/blog/2018/02/21/spring-integration-5-0-2-available"&gt;Artem Bilan has a nice post on the latest release, 5.0.2, of Spring Integration which now supports Micrometer-metrics publication&lt;/a&gt;, an updated &lt;code&gt;UnicastReceivingChannelAdapter&lt;/code&gt;, support for the &lt;code&gt;IntegrationGraphController&lt;/code&gt;, and dynamic filter configuration on &lt;code&gt;MessageChannel&lt;/code&gt;s. Check it out!&lt;/li&gt;
+  &lt;li&gt;Spring Boot legend Andy Wilkinson has just announced Spring Boot 2.0.0.RC2. This is the last release before the &lt;em&gt;VERY&lt;/em&gt; imminent 2.0.GA release. Get the bits and try it out now! Or.. just wait a matter of hours or days and you&amp;rsquo;ll &lt;a href="https://spring.io/blog/2018/02/21/spring-boot-2-0-0-rc2"&gt;be able to use Spring Boot 2.0.GA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Security lead Rob Winch has &lt;a href="https://spring.io/blog/2018/02/20/spring-security-5-0-2-released"&gt;just announced Spring Security 5.0.2&lt;/a&gt;), complete with bug fixes aplenty&lt;/li&gt;
+  &lt;li&gt;Spring Data ninja and Spring Vault lead Mark Paluch &lt;a href="https://spring.io/blog/2018/02/20/spring-vault-2-0-ga-released"&gt;just announced Spring Vault 2.0.GA&lt;/a&gt;. The release upgrades to Java 8 and Spring Framework 5, reactive support, improved null-safety by providing JSR-305 annotated API, Vault repository support through Spring Data KeyValue repositories, Kubernetes / AWS ECS/IAM authentication, &lt;code&gt;RoleId&lt;/code&gt;/&lt;code&gt;SecretId&lt;/code&gt; unwrapping for &lt;code&gt;AppId&lt;/code&gt; authentication, Spring Security integration with &lt;code&gt;VaultBytesEncryptor&lt;/code&gt; and &lt;code&gt;VaultRandomBytesKeyGenerator&lt;/code&gt; and more!&lt;/li&gt;
+  &lt;li&gt;Matt Raible updated &lt;a href="https://www.youtube.com/watch?v=kBaitgdcNWo"&gt;his screencast&lt;/a&gt; on how to get started with Spring Boot, SAML, and @okta. As he says: &amp;ldquo;Thanks to @SpringSecurity&amp;rsquo;s SAML DSL project, you can do it in minutes!&amp;rdquo;&lt;/li&gt;
+  &lt;li&gt;Make sure you check out the early acess builds to &lt;a href="http://jdk.java.net/11/"&gt;Java 11&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcloud/status/968582057411665920"&gt;Spring Cloud Finchley.M7&lt;/a&gt; has been released. This new release sees enhancements to Spring Cloud Gateway, Feign gets a top level project and more.&lt;/li&gt;
+  &lt;li&gt;This is an &lt;a href="https://twitter.com/olivergierke/status/968503357882105856?s=12"&gt;interesting thread&lt;/a&gt; from Spring Data lead Oliver Gierke: too much focus on distribution and not on decentralization. Might be worth watching this thread for replies.&lt;/li&gt;
+  &lt;li&gt;We&amp;rsquo;d love your feedback on &lt;a href="https://twitter.com/i/web/status/968577741669978113"&gt;Cloud Foundry distributions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The &lt;a href="http://springonetour.io/2018/boston"&gt;SpringOne Tour&lt;/a&gt; is stopping in Boston, MA March 13 and 14. Do &lt;em&gt;not&lt;/em&gt; miss it!&lt;/li&gt;
+  &lt;li&gt;Check out the latest features in the latest &lt;a href="https://twitter.com/springcentral/status/968541178403504128"&gt;release of Spring Tool Suite 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out this InfoQ review of the AxonDB event store. It works perfectly with Axon, a&lt;br/&gt; &lt;a href="https://www.infoq.com/news/2018/02/axondb-event-store-cqrs"&gt;Spring-based framework supporting CQRS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/cloudfoundry/status/968314244088455168"&gt;https://twitter.com/cloudfoundry/status/968314244088455168&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Our short-awards nominated podcast, &lt;a href="https://open.spotify.com/show/1MODQCggYv8Yo6IKLL76JC"&gt;&lt;em&gt;The Moment&lt;/em&gt;, is now available on Spotify&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out this quick-read slidedeck on &lt;a href="https://speakerdeck.com/bertzzie/spring-cloud-contract-introductionv"&gt;the value of Spring Cloud Contract&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;It&amp;rsquo;s a bummer to see &lt;a href="https://twitter.com/springcentral/status/968252418717700096"&gt;Spring legend Vinicius Carvalho&lt;/a&gt; depart for other horizons, but we wish him luck!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/968248640618680320"&gt;Zipkin 2.5&lt;/a&gt; - which supports distributed tracing - looks awesome! Zipkin 2.5 formalizes the tag &amp;ldquo;http.route&amp;rdquo;, used for metrics correlation and span naming conventions. It also presents &lt;code&gt;zipkin-gcp&lt;/code&gt; (formerly known as &lt;code&gt;stackdriver-zipkin&lt;/code&gt;) for continued progress towards Google Cloud Platform. Finally, it includes a number of updates you may not have noticed!&lt;/li&gt;
+  &lt;li&gt;The &lt;a href="https://twitter.com/SpringConTech/status/968157465157275648"&gt;SpringCon.Tech conference&lt;/a&gt;, in amazing New Orleans, has extended their CFP. Submit now!&lt;/li&gt;
+  &lt;li&gt;Keyhole Software&amp;rsquo;s Billy Korando has a &lt;a href="https://twitter.com/springcentral/status/968239369118035968"&gt;nice post on what&amp;rsquo;s new in JUnit 5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The new Spring Cloud Stream 2.0 release includes a complete revamp of content-type negotiation for the channel-based binders to address performance, flexibility and most importantly consistency. This &lt;a href="https://twitter.com/springcentral/status/968186967790796800"&gt;blog by Oleg Zhurakousky&lt;/a&gt; has the details.&lt;/li&gt;
+  &lt;li&gt;Mark Heckler does a great job &lt;a href="https://twitter.com/springcentral/status/968186042548240384"&gt;introducing Spring Cloud Services for Spring developers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.cloudfoundry.org/event/cfdaykccnceu18/"&gt;#CloudFoundry Day&lt;/a&gt; at #KubeCon + #CloudNativeCon is an educational event designed for the best minds of the cloud-native world. Join us May 1 to learn about the platform, connect with local end users and engineers, and exchange knowledge.&lt;/li&gt;
+  &lt;li&gt;Check out this Baeldung blog on &lt;a href="http://www.baeldung.com/spring-feature-flags"&gt;feature flags with Spring Boot and Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is interesting: &lt;a href="https://twitter.com/sometorin/status/966402867950059520"&gt;Open Policy Agent now has support for the Spring Security &lt;code&gt;AccessDecisionVoter&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Want to use &lt;a href="https://channel9.msdn.com/Shows/On-NET/Dave-Tillman-and-Zach-Brown-Resilient-Microservices-with-Steeltoe"&gt;Spring Cloud services from .NET?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Some good advice on architecture &lt;a href="https://twitter.com/springcentral/status/967506640009220097"&gt;from Arun Gupta and Matt Stine&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out how to use health check &lt;a href="https://www.cloudfoundry.org/blog/swimming-pool-containers-lifeguards-duty-part-ii/"&gt;endpoints with Cloud Foundry&amp;rsquo;s Diego&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I wrote a little thing about how to &lt;a href="http://www.javamagazine.mozaicreader.com/JanFeb2018/Twitter#&amp;pageSet=61&amp;page=0&amp;contentItem=0"&gt;use project Reactor and Spring to build reactive applications for the Java Magazine&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is super exciting: &lt;a href="https://github.com/soudmaijer/spring-cloud-contract/blob/cb087c0f7d3815624dc20a8417e748318c6231a8/spring-cloud-contract-tools/spring-cloud-contract-spec-kotlin/src/test/resources/contracts/shouldMarkClientAsFraud.kts"&gt;a Spring Cloud Contract definition&lt;/a&gt; written in &lt;em&gt;Kotlin&lt;/em&gt;! (Coming soon!)&lt;/li&gt;
+  &lt;li&gt;Not a lot about Spring in this one, but it&amp;rsquo;s a very useful article on various &lt;a href="https://jaxenter.com/command-line-tools-developers-141637.html"&gt;command line tools that are useful for developers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the Java Code Geeks blog has a nice post on &lt;a href="https://www.javacodegeeks.com/2018/02/springboot-messaging-rabbitmq.html"&gt;messaging with RabbitMQ and Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A good introduction to &lt;a href="http://www.baeldung.com/javax-validation-method-constraints"&gt;method constraints with the bean validation 2.0 API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The SivaLabs blog has a nice post on why Spring Boot is so popular - worth a read if you&amp;rsquo;re not already &lt;a href="https://sivalabs.in/2018/02/why-springboot-so-popular-how-to-learn-springboot/"&gt;convinced it&amp;rsquo;s worth learning&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://itunes.apple.com/us/podcast/software-engineering-daily/id1019576853?mt=2&amp;i=1000403214905"&gt;Software engineering daily podcast on cloudfoundry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I&amp;rsquo;m honored to have been included in this &lt;a href="http://www.onalytica.com/blog/posts/top-influential-developers-in-ai-cloud-iot-cybersecurity-and-vr-ar-mr/"&gt;list of most influential folks in cloud&lt;/a&gt;. Lots of good people in that list, besides yours truly!&lt;/li&gt;
+  &lt;li&gt;Pivotal Cloud Foundry legend Mike Dalessio was a recent guest on the &lt;a href="https://www.softwaredaily.com/post/5a8d7c5f549ae10004734d03/Cloud-Foundry-Overview-with-Mike-Dalessio"&gt;Software Daily podcast&lt;/a&gt;. It&amp;rsquo;s a &lt;em&gt;great&lt;/em&gt; listen!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcloud/status/966351370340257792"&gt;https://twitter.com/springcloud/status/966351370340257792&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Join me in &lt;a href="https://twitter.com/springcentral/status/966333008029532160"&gt;welcoming Josh Cummings to the Spring team&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Riff project has just &lt;a href="https://projectriff.io/blog/announcing-riff-0-0-4/"&gt;announced Riff 0.0.4&lt;/a&gt;. Riff is a function-as-a-service offering from Pivotal that runs on top of Kubernetes.&lt;/li&gt;
+  &lt;li&gt;The Asimo Tech blog has a nice post on &lt;a href="http://tech.asimio.net/2018/02/20/Microservices-Sidecar-pattern-implementation-using-Postgres-Spring-Cloud-Netflix-and-Docker.html"&gt;using a microservices Sidecar pattern implementation using Postgres, Spring Cloud Netflix and Docker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/micrometerio/status/966096809721507840"&gt;Micrometer 1.0 is now GA&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;This post introduces &lt;a href="https://lists.cloudfoundry.org/g/cf-dev/message/7741"&gt;TLS from Gorouter&lt;/a&gt; to app containers in Cloud Foundry&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Finchley.M7 Has Been Released</title>
     <link rel="alternate" href="https://spring.io/blog/2018/02/27/spring-cloud-finchley-m7-has-been-released" />
@@ -1667,19 +1728,5 @@ dependencies {&#xD;
     ...&#xD;
 }
 &lt;/code&gt;&lt;/pre&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Web Flow 2.5 RC1 is available</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/02/12/spring-web-flow-2-5-rc1-is-available" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Rossen Stoyanchev</name>
-    </author>
-    <id>tag:spring.io,2018-02-12:3168</id>
-    <updated>2018-02-12T23:09:33Z</updated>
-    <content type="html">&lt;p&gt;The first and only release candidate planned for Spring Web Flow 2.5 is now available from the &lt;a href="http://repo.spring.io/milestone"&gt;Spring Milestones&lt;/a&gt; repository. The &lt;a href="https://github.com/spring-projects/spring-webflow-samples"&gt;samples repository&lt;/a&gt; has been updated to use it.&lt;/p&gt;
-&lt;p&gt;This release provides an upgrade path to Spring Framework 5 along with Java 8, Servlet 3.1, Hibernate 5, Tiles 3, and JSF 2.2 as minimum requirements.&lt;/p&gt;
-&lt;p&gt;In this release &amp;ldquo;spring-js&amp;rdquo; has been merged with &amp;ldquo;spring-webflow&amp;rdquo; so there is no longer a separate &amp;ldquo;spring-js&amp;rdquo; module. As a result some configuration classes have changed packages. The &amp;ldquo;spring-js-resources&amp;rdquo; module is still available but as an optional module that must be included explicitly if needed.&lt;/p&gt;
-&lt;p&gt;Please give the release candidate a try and report any issues. The final release is currently scheduled for early March.&lt;/p&gt;</content>
   </entry>
 </feed>

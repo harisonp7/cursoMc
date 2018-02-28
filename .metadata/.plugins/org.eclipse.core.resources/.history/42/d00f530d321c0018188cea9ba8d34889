@@ -1,0 +1,17 @@
+package com.hp.cursomc.resources.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.client.HttpServerErrorException;
+
+import com.hp.cursomc.services.exceptions.ObjectNotFoundException;
+
+@ControllerAdvice
+public class ResourceExceptionsHandler {
+	
+	public ResponseEntity<StandarError> objectNotFound(ObjectNotFoundException e, HttpServerErrorException request){
+		StandarError err = new StandarError(HttpStatus.NOT_FOUND, e.getMessage(), System.currentTimeMillis());
+	}
+
+}
